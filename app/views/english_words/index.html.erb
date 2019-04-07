@@ -18,7 +18,7 @@
       <tr>
         <td><%= english_word.word %></td>
         <td><%= english_word.word_meaning %></td>
-        <td><%= english_word.sentence %></td>
+        <td><%= english_word.sentence.gsub(english_word.word, "-----") %></td>
         <td><%= english_word.sentence_meaning %></td>
         <td><%= link_to 'Show', english_word %></td>
         <td><%= link_to 'Edit', edit_english_word_path(english_word) %></td>
